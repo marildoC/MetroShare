@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MetroFood Donator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment"></string>
+    <string name="about">HOW TO USE?</string>
+    <string name="aboutus">MetroFood Donator\n<b>INSTRUCTIONS</b>\n\n<b>Step 1:</b> If your are a donor, add your details under the donor section\n\n<b>Step 2:</b> The donor can select the number of plates. By number of plates, the donor means that he is donating a food item like rice, wheat or such cereals, pulses, fruits or meat covering one full plate.\n\n<b>Step 3:</b> If you are some group/organization that is interested in distributing foods, hop onto the receiver section and request for donation through phone calls</string>
+
+</resources>

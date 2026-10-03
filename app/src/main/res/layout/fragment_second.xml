@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/summer"
+
+        tools:context=".SecondFragment">
+
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="212dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="68dp"
+            android:ems="10"
+            android:fontFamily="@font/nunito_sans_light"
+            android:hint="Donor Name"
+            android:inputType="textPersonName"
+            android:minHeight="52dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="#615E5E"
+            android:textColorLink="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/age_et"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/age_et"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/age_et"
+            android:layout_width="212dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="@font/nunito_sans_light"
+            android:hint="Plates Quantity"
+            android:inputType="number"
+            android:minHeight="52dp"
+            android:textColor="@color/white"
+            android:textColorHint="#615E5E"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/phone_et"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/phone_et"
+            app:layout_constraintTop_toBottomOf="@+id/name_et" />
+
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="217dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="@font/nunito_sans_light"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:minHeight="52dp"
+            android:textColor="@color/white"
+            android:textColorHint="#615E5E"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age_et" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+
+            android:fontFamily="@font/nunito_sans_light"
+            android:text="DONOR TYPE"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.455"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_et" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <RadioButton
+                android:id="@+id/male_rb"
+                android:layout_width="10dp"
+                android:layout_height="27dp"
+                android:layout_margin="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:fontFamily="@font/nunito_sans_light"
+                android:text="INDIVIDUAL"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/female_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans_light"
+                android:text="GROUP"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/nunito_sans_light"
+
+            android:text="Plates Quantity :"
+            android:textColor="#00FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/food_sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/food_sp"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Spinner
+            android:id="@+id/food_sp"
+            android:layout_width="3dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="130dp"
+            android:scrollbarSize="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.895"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+
+            android:id="@+id/saveBtn"
+            android:layout_width="139dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="115dp"
+            android:background="@drawable/btn_round"
+            android:fontFamily="@font/nunito_sans_light"
+            android:text="DONATE!"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="#72546CF6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateBtn" />
+
+        <Button
+            android:id="@+id/dateBtn"
+            android:layout_width="182dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="95dp"
+            android:background="@drawable/btn_round"
+            android:fontFamily="@font/nunito_sans_light"
+            android:text="Pickup Date"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="#72546CF6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

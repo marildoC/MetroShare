@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fifthFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/summer"
+    android:backgroundTint="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:tag="layout/fragment_fifth_0"
+    tools:context=".FifthFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="327dp"
+        app:srcCompat="@drawable/success" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:fontFamily="@font/pacifico"
+        android:gravity="center"
+        android:text="Thank You for your Donation!"
+        android:textColor="#4A0F4A"
+        android:textSize="40sp" />
+
+</LinearLayout>
