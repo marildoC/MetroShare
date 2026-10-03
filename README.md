@@ -1,6 +1,6 @@
 # MetroShare
 
-MetroShare is an Android application designed to support **local food redistribution** by structuring the interaction between people offering surplus food and groups or organizations able to receive and distribute it.
+MetroShare is an Android application designed to support **local food redistribution** by structuring the interaction between people offering surplus food and groups or organizations able to receive and distribute it. 
 
 Rather than treating food donation as an informal exchange, the application models it as a simple coordination workflow: donors register available food and relevant details, while recipients can review donation information and initiate collection through the provided contact data.
 
