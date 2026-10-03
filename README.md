@@ -9,7 +9,7 @@ The application is implemented in **Java** using Android Jetpack components, Nav
 ## Core Concepts
 
 - Structured donor and recipient workflows
-- Local persistence of donation information with Room
+- Local persistence of donation information with Room 
 - Repository and ViewModel-based data access
 - Fragment-based navigation and interface flow
 - Android-native implementation with Java and Jetpack components
